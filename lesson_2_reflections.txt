@@ -24,6 +24,10 @@ organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
+	It's difficult for the human mind to conceptualize branches in the same way that git displays them on the command line.
+	A diagram allows humans to visual trace the paths of each branch, and see how they are connected (at master), or how
+	certain commits may become unreachable. 
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
