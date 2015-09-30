@@ -1,0 +1,67 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	I ran this compare using fc on Windows 10 and diff on Linux Mint. Both tools made it 
+	easy to pick out the typo, but I found the output of diff made it much quicker to pick
+	through the changes. The "-" and "+" lines right next to each other made it very easy
+	and fast to see what changed, as long as you remember the order you entered the file
+	names as parameters. The advantage of Windows fc is that it shows the file names over
+	and over, but that also adds more to the output. 
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+	Having the entire history of a file would make it very easy to revert or look back
+	at previous code should some modifcation fail to work correctly. Version history should
+	allow a programmer to quickly rollback broken changes and start over, or to pick out the 
+	specific lines in question and fix those. That's much more efficient than manually
+	scanning hundreds of lines of code of the current save for the problem. 
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	Manual saves allow you to snapshot code at more logical breaks than an autosave feature. 
+	You would probably manually commit after compilable section of code, whereas autosave
+	might snapshot in the middle of a line and create a version that won't compile. That said,
+	if you are forgetful or bad at manual commits, at least with autosave you'll have a partial 
+	section to work forward from that is pretty recent. If you forget to manually save and
+	aren't using autosave, then you may have to recreate a few days worth of work instead of 
+	a few hours. 
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+	Git supports saving all files in a repository in a single commit. This is useful
+	for coding applications where multiple files make up a single project or website, 
+	and the files are interdependent. For example, you'd typically be updating an html file
+	and its associated css file at the same time, so both files should be committed 
+	simultaneously. 
+	The types of files stored in Google Docs (spreadsheets, word processing documents) are
+	typically standalone files, where changing one doesn't necessarily affect the other files. 
+	In that case, separate commits are fine. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+	The git log command will output all of the commits in a repository, including their
+	unique ID, the author, the date/time, and a comment for each commit. This allows you
+	to quickly see different versions of files and the brief summary of what was the intended
+	modification. 
+	The git diff command allows you to compare two commits (using their unique IDs) to quickly
+	see the individual lines that were added or removed between versions. 
+	From a process standpoint, you'd first use git log to gather the unique IDs of two commits,
+	and then use git diff with those IDs to see specific changes between the two commits. 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	Having the ability to roll back to previously committed version of your code gives you 
+	a safety net so you can  introduce new code or functionality without worrying that you'll
+	be stuck if a bug is introduced. With version control, you can quickly rollback to a prior
+	working commit should you be unable to sort out your bug. Of course, this assumes you've
+	been making appropriately timed manual commits.  
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+	I'd like to set up a repository for my next Udacity project, as well as for my personal 
+	websites. 
