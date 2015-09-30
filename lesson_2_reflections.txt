@@ -25,11 +25,16 @@ organized? How would branches help?
 How do the diagrams help you visualize the branch structure?
 
 	It's difficult for the human mind to conceptualize branches in the same way that git displays them on the command line.
-	A diagram allows humans to visual trace the paths of each branch, and see how they are connected (at master), or how
-	certain commits may become unreachable. 
+	A diagram allows humans to visual trace the paths of each branch and its commits, and see how they are connected (at master), 
+	or how certain commits may become unreachable. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+
+	The merged branches are combined into a new single branch that contains the commit history from each of the source branches. 
+	The new merged commit is considered to have two parents, so arrows on the digram go to the last commit of each source branch. 
+	You can then erase the branch name from the diagram for the branch that was merged into the other branch, as all those commits
+	are now going to show under the new merged branch. 
 
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
