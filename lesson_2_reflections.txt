@@ -38,3 +38,7 @@ the diagram the way we do?
 
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+	Git's auto merge will ask users to resolve any ambiguity, even when the choice seems obvious to humans. This could become
+	annoying after a while. However, it does prevent unwanted changes. Manual merging gives you more control, but doesn't take
+	advantage of Git's built-in logic for merging. 
